@@ -1,0 +1,26 @@
+﻿<form class="form-horizontal" 
+	  role="form" 
+	  enctype="multipart/form-data" 
+	  method="post" 
+	  action="/set-cookie">
+
+	<div class="form-group">
+		<label for="cookieName" class="col-sm-2 control-label">Cookie Name</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" required id="cookieName" name="cookieName" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="cookieText" class="col-sm-2 control-label">Cookie Text</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" required id="cookieText" name="cookieText" />
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-4">
+			<button type="submit" class="btn btn-primary">Set Cookie</button>
+		</div>
+	</div>
+
+</form>
+

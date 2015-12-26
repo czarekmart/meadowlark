@@ -1,0 +1,7 @@
+# ignore packages installed by npm
+node_modules
+
+# put any files you don't want to check in.
+credentials.js
+
+

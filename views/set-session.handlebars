@@ -1,0 +1,26 @@
+﻿
+<form class="form-horizontal"
+	  role="form"
+	  enctype="multipart/form-data"
+	  method="post"
+	  action="/set-session">
+
+	<div class="form-group">
+		<label for="variableName" class="col-sm-2 control-label">Variable Name</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" required id="variableName" name="variableName" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="variableValue" class="col-sm-2 control-label">Variable Value</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" required id="variableValue" name="variableValue" />
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-4">
+			<button type="submit" class="btn btn-primary">Set Session</button>
+		</div>
+	</div>
+
+</form>
