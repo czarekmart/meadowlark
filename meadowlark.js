@@ -530,7 +530,7 @@ app.post('/notify-me-when-in-season', function(req, res) {
 });
 
 //=========================================================
-// Random routing
+// Random Routing
 //=========================================================
 function formatRandomOutput(req, prefix) {
 	var output = '<h2>Random Output</h2>';
