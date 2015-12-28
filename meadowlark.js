@@ -38,10 +38,13 @@ app.use(function (req, res, next) {
 //-- Connect
 var connext = require('connect');
 
+//-- Chai: gives us ability to assert to test code
+var chai = require('chai').assert;
 
 // route for about
 
 var fortune = require('./lib/fortune.js');
+chai.isNotNull(fortune, 'fortune should not be null');
 var bodyParser = require('body-parser').urlencoded({ extended: true });
 
 // form parser
@@ -531,6 +534,7 @@ app.post('/notify-me-when-in-season', function(req, res) {
 
 //=========================================================
 // Random Routing
+// It shows the concept of calling next in the route handler.
 //=========================================================
 function formatRandomOutput(req, prefix) {
 	var output = '<h2>Random Output</h2>';
@@ -603,6 +607,12 @@ app.get('/staff/:name', function(req, res){
 	}
 	return res.render('staff', params);
 });
+
+//=========================================================
+// APIs
+//=========================================================
+var apis = require('./lib/apis.js').initilizeAPIs(app);
+
 
 //=========================================================
 // Other stuff

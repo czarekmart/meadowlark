@@ -12,11 +12,15 @@
     "body-parser": "^1.14.1",
     "connect": "^3.4.0",
     "cookie-parser": "^1.4.0",
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "express-session": "^1.12.1",
     "formidable": "^1.0.17",
     "mongoose": "^3.8.37",
     "nodemailer": "^1.10.0"
+  },
+  "devDependencies": {
+    "restler": "^3.4.0"
   }
 }
