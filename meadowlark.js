@@ -47,7 +47,7 @@ var fortune = require('./lib/fortune.js');
 chai.isNotNull(fortune, 'fortune should not be null');
 var bodyParser = require('body-parser').urlencoded({ extended: true });
 
-// form parser
+// Form parser
 var formidable = require('formidable');
 
 app.use(bodyParser);
